@@ -11,7 +11,6 @@ class MapBloc extends ChangeNotifier {
 
   GoogleMapController? mapController;
   LatLng? markerLatLng;
-  List<LatLng> points = [];
 
   initateController(GoogleMapController controller) {
     mapController = controller;
@@ -21,7 +20,6 @@ class MapBloc extends ChangeNotifier {
   moveCameraWithLocation(LatLng data) {
     mapController?.animateCamera(CameraUpdate.newLatLng(data));
     markerLatLng = data;
-    points.add(data);
     notifyListeners();
   }
 

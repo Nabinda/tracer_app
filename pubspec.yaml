@@ -41,12 +41,18 @@ dependencies:
   #Firebase pacakages
   firebase_core: ^2.24.2
   cloud_firestore: ^4.13.6
+  #Notification
   firebase_messaging: ^14.7.9
+  flutter_local_notifications: ^16.2.0
   #Map
   google_maps_flutter: ^2.5.0
   #For Creating Model
   freezed: ^2.4.6
   json_annotation: ^4.8.1
+  #For Recording Screen
+  flutter_screen_recording: ^2.0.10
+  permission_handler: ^11.1.0
+  open_file: ^3.3.2
 
 
 dev_dependencies:
@@ -75,9 +81,7 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - assets/
-  #   - images/a_dot_ham.jpeg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
